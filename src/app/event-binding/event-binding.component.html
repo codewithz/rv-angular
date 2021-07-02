@@ -1,0 +1,18 @@
+<h4>Event Binding</h4>
+<div (click)="onMainDivClicked()" style="border:1px solid tomato">
+    <div (click)="onInternalDivClicked()">
+    <button 
+    class="btn btn-success" 
+    (click)="onSave($event)">
+    Save
+</button>
+</div>
+</div>
+<br><br>
+<div>
+    <input type="text" #myText1
+     (keyup.enter)="onKeyUp(myText1)">
+
+     <input type="text" #myText2
+     (keyup.enter)="onKeyUpValue(myText2.value)">
+</div>

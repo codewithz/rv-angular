@@ -1,0 +1,16 @@
+<h4>Two Way Binding</h4>
+
+<div>
+    <input 
+    type="text" 
+    [value]="email" 
+    #emailT
+    (keyup.enter)="email=emailT.value; onKeyUp()">
+
+    <input 
+    type="text" 
+    [(ngModel)]="email" 
+    (keyup.enter)="onKeyUp()">
+
+
+</div>

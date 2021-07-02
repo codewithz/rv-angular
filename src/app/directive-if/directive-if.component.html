@@ -1,0 +1,11 @@
+<div *ngIf="players.length>0; then playersAvailable else noPlayers">
+ 
+</div>
+
+<ng-template #playersAvailable>
+    List of Players
+</ng-template>
+
+<ng-template #noPlayers>
+    No Players Yet
+</ng-template>

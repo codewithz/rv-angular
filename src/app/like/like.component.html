@@ -1,0 +1,24 @@
+<div style="margin-left:50%;border:1px">
+
+<!-- <span 
+class="bi"
+[class.highlighted]="isActive"
+[class.bi-heart-fill]="isActive"
+[class.bi-heart]="!isActive"
+(click)="onClick()"
+></span> -->
+ <!-- ngClass -->
+<span 
+class="bi"
+(click)="onClick()"
+[ngClass]="{
+    'highlighted':isActive, 
+    'bi-heart-fill':isActive,
+    'bi-heart':!isActive
+}"
+></span>
+
+<span>{{likesCount}}</span>
+
+
+</div>

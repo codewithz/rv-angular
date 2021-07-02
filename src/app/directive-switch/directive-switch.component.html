@@ -1,0 +1,20 @@
+<h4>ngSwitch</h4>
+<br>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" [class.active]="viewMode== 'map'"  
+        (click)="viewMode='map'"
+        >Map View</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="viewMode=='list'"
+        (click)="viewMode='list'"
+        href="#">List View</a>
+      </li>
+</ul>
+
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'">Map View Content</div>
+    <div *ngSwitchCase="'list'">List View Content</div>
+    <div *ngSwithcDefault>Otherwise</div>
+</div>
