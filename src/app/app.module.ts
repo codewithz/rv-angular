@@ -22,6 +22,7 @@ import { DirectiveIfComponent } from './directive-if/directive-if.component';
 import { DirectiveSwitchComponent } from './directive-switch/directive-switch.component';
 import { DirectiveForComponent } from './directive-for/directive-for.component';
 import { TrackingComponent } from './tracking/tracking.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { TrackingComponent } from './tracking/tracking.component';
     DirectiveIfComponent,
     DirectiveSwitchComponent,
     DirectiveForComponent,
-    TrackingComponent
+    TrackingComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
